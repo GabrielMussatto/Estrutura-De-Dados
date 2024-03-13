@@ -1,33 +1,11 @@
 package app;
 
-public class No<T> {
-	private T elemento;
-	private No<T> proximo;
+public class No {
+    public int valor;
+    public No proximo;
 
-	public No(T valor) {
-		this.elemento = valor;
-		this.proximo = null;
-	}
-
-	public T getElemento() {
-		return elemento;
-	}
-
-	public void setElemento(T elemento) {
-		this.elemento = elemento;
-	}
-
-	public No<T> getProximo() {
-		return proximo;
-	}
-
-	public void setProximo(No<T> proximo) {
-        this.proximo = proximo;
+    public No(int valor) {
+        this.valor = valor;
+        this.proximo = null;
     }
-	
-	@Override
-	public String toString() {
-		return String.valueOf(this.elemento);
-	}
-	
 }
